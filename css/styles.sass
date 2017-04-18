@@ -1,6 +1,10 @@
 header
    h1
       font-size: 1em
+      background-color: grey
+      margin-top: 0%
+      padding: 10px 0px
+      padding-left: 2px
 
    nav
       text-align: center
@@ -11,22 +15,56 @@ ul
 
    li
       display: inline-block
+      position: relative
 
-   ul
-      li
+      ul
          display: none
 
+         li
+            display: block
+
+      a
+         display: block
+         border: 1px solid black
+         margin-left: 1px
+         white-space: nowrap
+         text-decoration: none
+         padding: 5px 15px 5px 15px
+         color: black
+         background: white
+
+
+   li:hover
+      ul
+         z-index: 1
+         display: block
+         position: absolute
+
+      li
+         float: none
+         font-size: 11px
+
+         a:hover
+            background: grey
+
+      a
+         background: white
+
 section
+   text-align: center
+
    div
-      display: inline-block
+      display: block
 
    .books
       width: 150px
-      vertical-align: top
 
    .details
-      width: 150px
-      vertical-align: top
+      margin-top: 15px
+
+      p
+         margin-top: 0%
+
 
 .parallax
    min-height: 320px
@@ -48,5 +86,10 @@ section
    background-image: url("../images/ocean320.jpeg")
 
 footer
+   background-color: grey
+
    nav
       text-align: center
+
+      ul
+         margin: 0%
