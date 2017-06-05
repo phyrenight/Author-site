@@ -9,49 +9,50 @@ header
    nav
       text-align: center
 
-ul
-   list-style: none
-   padding: 0%
-
-   li
-      display: inline-block
-      position: relative
-
       ul
-         display: none
-
-         li
-            display: block
-
-      a
-         display: block
-         border: 1px solid black
-         margin-left: 1px
-         white-space: nowrap
-         text-decoration: none
-         padding: 5px 15px 5px 15px
-         color: black
-         background: white
-
-
-   li:hover
-      ul
-         z-index: 1
-         display: block
-         position: absolute
+         list-style: none
+         padding: 0%
 
       li
-         float: none
-         font-size: 11px
+         display: inline-block
+         position: relative
 
-         a:hover
-            background: grey
+         ul
+            display: none
 
-      a
-         background: white
+            li
+               display: block
+
+         a
+            display: block
+            border: 1px solid black
+            margin-left: 1px
+            white-space: nowrap
+            text-decoration: none
+            padding: 5px 15px 5px 15px
+            color: black
+            background: white
+
+
+      li:hover
+         ul
+            z-index: 1
+            display: block
+            position: absolute
+
+         li
+            float: none
+            font-size: 11px
+
+            a:hover
+               background: grey
+
+         a
+            background: white
 
 section
    text-align: center
+   padding-bottom: 15px
 
    div
       display: block
@@ -64,6 +65,7 @@ section
 
       p
          margin-top: 0%
+         font-size: 120%
 
 
 .parallax
@@ -72,6 +74,7 @@ section
    background-position: center
    background-repeat: no-repeat
    background-size: cover
+   box-shadow: inset 0px 5px 8px #000, inset 0px -7px 8px #000
 
 #first-parallax
    background-image: url("../images/mountain320.jpeg")
@@ -87,9 +90,24 @@ section
 
 footer
    background-color: grey
+   padding: 10px 0px
 
    nav
       text-align: center
 
       ul
+         list-style: none
          margin: 0%
+
+         li
+            display: inline-block
+
+@media (min-width: 600px)
+   section
+      div
+         display: inline-block
+         vertical-align: top
+         width: 49%
+
+      .details
+         margin-top: 3%
